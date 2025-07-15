@@ -10,13 +10,20 @@ Sentiment Analysis was done for 2 types of data:
 Models used: DistilBERT (66 Mil), DistilroBERTa-base (82 Mil), ELECTRA (14 Mil)
 Finetuning was carried out on Kaggle GPU t4 x2
 
-## Results
-## Model Comparison
+## Results And Conclusions
 
+1. Binary Classification
+| Model             | Max Accuracy (%) |
+|-------------------|------------------|
+| DistilBERT         | 95.98            |
+| DistilroBERTa-base | 96.86            |
+| ELECTRA            | 95.77            |
+
+3. 5-Class Classification
 | Model             | Max Accuracy (%) |
 |-------------------|------------------|
 | DistilBERT         | 66.04            |
 | DistilroBERTa-base | 67.64            |
 | ELECTRA            | 65.04            |
 
-
+DistilroBERTa-base outperformed DistilBERT and ELECTRA in both kinds of sentiment analysis.
